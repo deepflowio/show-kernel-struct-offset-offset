@@ -39,6 +39,11 @@ int STRUCT_FILES_PRIVATE_DATA_OFFSET(void)
 	return offsetof(typeof(struct file), private_data);
 }
 
+int STRUCT_TASK_TLS_OFFSET(void)
+{
+	return offsetof(typeof(struct task_struct), thread) + offsetof(typeof(struct thread_struct), fsbase);
+}
+
 static int init_skso(void)
 {
 	return 0;
