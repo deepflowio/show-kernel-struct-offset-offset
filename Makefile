@@ -3,7 +3,7 @@ KERNELRELEASE ?= $(shell uname -r)
 KDIR ?= /lib/modules/$(KERNELRELEASE)/build
 
 show: build
-	objdump -S skso.ko
+	objdump -d skso.ko
 build:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
 clean:
