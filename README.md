@@ -4,4 +4,4 @@ If your system has not been adapted, please open a new issue, make, and paste th
 
 You must have gcc, make, objdump, and the headers for the current kernel installed.
 
-Please submit your issue to [deepflowio/deepflow](https://github.com/deepflowio/deepflow/issues)
+Please submit your output to [deepflowio/deepflow](https://github.com/deepflowio/deepflow/issues)
