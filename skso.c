@@ -66,10 +66,20 @@ int struct_file__dentry__sum_offset(void)
 			f_path) + offsetof(typeof(struct path), dentry);
 }
 
+int struct_file__f_pos__offset(void)
+{
+	return offsetof(typeof(struct file), f_pos);
+}
+
 int struct_dentry_name__sum__offset(void)
 {
 	return offsetof(typeof(struct dentry),
 			d_name) + offsetof(typeof(struct qstr), name);
+}
+
+int struct_dentry__d_parent__offset(void)
+{
+	return offsetof(typeof(struct dentry), d_parent);
 }
 
 int struct_sock_common__skc_family_offset(void)
